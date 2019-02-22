@@ -30,18 +30,40 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-    function coffeeSelector(e){
-        e.preventDefault();
-        var filteredCoffees = [];
+    // function coffeeSelector(e){
+    //     e.preventDefault();
+    //     var filteredCoffees = [];
+    //
+    //     coffees.forEach(function (coffee){
+    //         if (coffeeChoice.value.toLowerCase() === coffee.name.toLowerCase().substring(0, coffeeChoice.value.length)){
+    //             filteredCoffees.push(coffee);
+    //         }
+    //     });
+    //     tbody.innerHTML = renderCoffees(filteredCoffees);
+    //
+    // }
 
-        coffees.forEach(function (coffee){
-            if (coffeeChoice.value.toLowerCase() === coffee.name.toLowerCase().substring(0, coffeeChoice.value.length)){
-                filteredCoffees.push(coffee);
-            }
-        });
-        tbody.innerHTML = renderCoffees(filteredCoffees);
+var coffeeSearch = document.getElementById("coffeeSearch");
+
+var searchQuery = function(e){
+    var html = "";
+    for (var i = 0; i < coffees.length; i++ ){
+
+        if (coffees[i].name.toLowerCase().includes(coffeeSearch.value.toLowerCase())){
+            html = html + renderCoffee(coffees[i]);
+
+
+        }
+        tbody.innerHTML = html;
 
     }
+
+};
+
+
+
+
+coffeeSearch.addEventListener("keyup",searchQuery);
 
 
 
