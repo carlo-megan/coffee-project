@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Lemonada" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="display-4">
-    <h1>MEGAN & CARLO'S COVFEFE SELECTOR</h1>
-    <form class="bg-primary">
-        <label for="roast-selection"></label>
-        <select id="roast-selection" class="dropdown-toggle bg-secondary">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <label for="coffees"></label>
-        <input id="coffeesSearch" type="search" onkeydown="renderCoffees(coffees)">
-        <input id="submit" type="submit" />
+<body class="display-4 container">
+    <div class="row">
+        <h1 id="title" class="col">MC COVFEFE SELECTOR</h1>
+        <form class="bg-primary row">
+            <label for="roast-selection"></label>
+            <select id="roast-selection" class="dropdown-toggle bg-secondary">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <label for="coffees"></label>
+            <input id="coffeesSearch" type="search" onkeydown="renderCoffees(coffees)">
+            <input id="submit" type="submit"/>
 
-    </form>
-    <div class="bg-danger display-4 container ">
-        <header>
-        <div id="coffees" class="bg-warning justify-content"></div>
-
-        </header>
+        </form>
+    <div class="bg-danger display-4 col">
+        <div id="coffees" class="bg-warning "></div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
