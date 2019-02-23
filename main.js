@@ -2,8 +2,8 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee d-flex">';
-    html += '<h1 class="col align-self-center">' + coffee.name + '</h1>';
-    html += '<p class="col align-self-end">' + coffee.roast + '</p>';
+    html += '<h1 class="col d-inline card card-body">' + coffee.name + '</h1>';
+    html += '<p class="col d-inline card card-body ">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -30,19 +30,6 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-    // function coffeeSelector(e){
-    //     e.preventDefault();
-    //     var filteredCoffees = [];
-    //
-    //     coffees.forEach(function (coffee){
-    //         if (coffeeChoice.value.toLowerCase() === coffee.name.toLowerCase().substring(0, coffeeChoice.value.length)){
-    //             filteredCoffees.push(coffee);
-    //         }
-    //     });
-    //     tbody.innerHTML = renderCoffees(filteredCoffees);
-    //
-    // }
-
 var coffeeSearch = document.getElementById("coffeeSearch");
 
 var searchQuery = function(e){
@@ -52,15 +39,12 @@ var searchQuery = function(e){
         if (coffees[i].name.toLowerCase().includes(coffeeSearch.value.toLowerCase())){
             html = html + renderCoffee(coffees[i]);
 
-
         }
         tbody.innerHTML = html;
 
     }
 
 };
-
-
 
 
 coffeeSearch.addEventListener("keyup",searchQuery);
@@ -94,7 +78,7 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-var coffeeChoice = document.querySelector('#coffeesSearch');
+// var coffeeChoice = document.querySelector('#coffeesSearch');
 tbody.innerHTML = renderCoffees(coffees);
+submitButton.addEventListener('click', updateCoffees, false);
 
-submitButton.addEventListener('click', updateCoffees);

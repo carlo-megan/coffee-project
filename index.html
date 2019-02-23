@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="display-4 container bg-info">
-    <div class="row">
-        <h1 id="title" class="d-flex">MC Covfefe Selector</h1>
-        <form class="bg-primary row">
+<body class="row bg-dark">
+    <div class="display-4 container bg-primary align-self-center">
+        <h2 id="title" class="display-2 text-center bg-primary">Carlo || Megan: Java World</h2>
+        <form class="bg-primary row mb-4 form-inline ml-4" >
             <label for="roast-selection"></label>
-            <select id="roast-selection" class="dropdown-toggle bg-secondary">
+            <select id="roast-selection" class="dropdown-toggle align-self-center mr-2">
                 <option>all</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <label for="coffeesSearch"></label>
-            <input id="coffeeSearch" type="search">
-            <input id="Submit" type="submit"/>
-
+            <label for="coffees"></label>
+            <input id="coffeeSearch" type="search" class="form-inline align-self-center">
+            <input id="submit" type="submit" class="form-inline"/>
         </form>
-    <div class="bg-danger display-4 col">
-        <div id="coffees" class="bg-warning "></div>
+    <div class="bg-dark display-4 col card card-body">
+        <div id="coffees" class="bg-dark"></div>
     </div>
     </div>
 
