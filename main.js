@@ -2,8 +2,8 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee d-flex">';
-    html += '<h1 class="col d-inline card card-body">' + coffee.name + '</h1>';
-    html += '<p class="col d-inline card card-body ">' + coffee.roast + '</p>';
+    html += '<h2 class="col-md card card-body">' + coffee.name + '</h2>';
+    html += '<p class="col-md card card-body ">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -80,5 +80,4 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 // var coffeeChoice = document.querySelector('#coffeesSearch');
 tbody.innerHTML = renderCoffees(coffees);
-submitButton.addEventListener('click', updateCoffees, false);
 
