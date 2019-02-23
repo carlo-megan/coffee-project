@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
@@ -10,26 +11,33 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="row bg-secondary">
+
+<!--THIS IS THE MAIN CONTAINER OF INPUT FORMS-->
+<body class="bg-secondary">
 <div class="display-4 container bg-secondary align-self-center">
-    <h2 id="title" class="display-2 text-center bg-secondary mb-4">Carlo || Megan: Java World</h2>
+    <h2 id="title" class="display-2 text-center bg-secondary mb-4 card-text">Carlo & Megan: Java World</h2>
     <form class="bg-secondary row mb-4 form-inline ml-4">
         <label for="roast-selection"></label>
-        <select id="roast-selection" class="dropdown-toggle align-self-center mr-2">
+        <select id="roast-selection" class="dropdown-toggle align-self-center mr-2 bg-secondary">
+
             <option>all</option>
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
+
         </select>
         <label for="coffees"></label>
-        <input id="coffeeSearch" type="search" class="form-inline align-self-center">
-        <input id="submit" type="submit" class="form-inline "/>
+        <input id="coffeeSearch" type="search" class="form-inline align-self-center bg-secondary">
+        <input id="submit" type="submit" class="form-inline bg-secondary "/>
     </form>
-    <div class="bg-dark display-4 col card card-body d-flex">
-        <div id="coffees" class="bg-dark"></div>
+
+    <!--THIS IS THE EMPTY DIV FOR THE JS DATABASE INFO TO BE DISPLAYED-->
+    <div class="bg-secondary display-4 col card card-body d-flex">
+        <div id="coffees" class="bg-secondary"></div>
     </div>
 </div>
 
+<!--BOOTSTRAP CDNS-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

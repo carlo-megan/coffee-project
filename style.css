@@ -11,7 +11,6 @@ h2, p{
     font-family: "Pacifico", cursive;
     font-size: 1em;
     color: darkturquoise;
-    text-shadow: darkslateblue;
 }
 
 .display-4{
@@ -20,6 +19,6 @@ h2, p{
 
 #java-varietal,
 #roast-process {
-    color: gray;
+    color: silver;
 }
 
