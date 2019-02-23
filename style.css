@@ -1,11 +1,18 @@
 h2, p{
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
+    color: cornflowerblue;
 }
 
 #title,
 #roast-selection,
 #submit,
 #coffeeSearch{
-    font-family: "Permanent Marker", cursive;
+    font-family: "Pacifico", cursive;
+    font-size: 1em;
+    color: cornflowerblue;
+}
+
+.display-4{
+    color: cornflowerblue;
 }
