@@ -2,10 +2,10 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee d-flex">';
-    html += '<h2 class="col-md card card-body">' + "java varietal:"+ '</h2>';
-    html += '<h2 class="col-md card card-body">' + coffee.name + '</h2>';
-    html += '<h2 class="col-md card card-body">' + "roast process:"+ '</h2>';
-    html += '<p class="col-md card card-body ">' + coffee.roast + '</p>';
+    html += '<h2 class="col-md card card-body" id="java-varietal">' + "java varietal:"+ '</h2>';
+    html += '<h2 class="col-md card card-body ml-2">' + coffee.name + '</h2>';
+    html += '<h2 class="col-md card card-body ml-2" id="roast-process">' + "roast process:"+ '</h2>';
+    html += '<p class="col-md card card-body ml-2">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -59,7 +59,7 @@ coffeeSearch.addEventListener("keyup",searchQuery);
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
+    {id: 1, name: 'Light City', roast: 'light     '},
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
     {id: 4, name: 'City', roast: 'medium'},

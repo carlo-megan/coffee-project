@@ -1,7 +1,7 @@
 h2, p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    color: cornflowerblue;
+    font-family: 'Josefin Slab', serif;
+    font-size: .9em;
+    color: navy;
 }
 
 #title,
@@ -10,9 +10,16 @@ h2, p{
 #coffeeSearch{
     font-family: "Pacifico", cursive;
     font-size: 1em;
-    color: cornflowerblue;
+    color: darkturquoise;
+    text-shadow: darkslateblue;
 }
 
 .display-4{
     color: cornflowerblue;
 }
+
+#java-varietal,
+#roast-process {
+    color: gray;
+}
+
