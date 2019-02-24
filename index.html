@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Lemonada" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="display-4 container">
-    <div class="row">
-        <h1 id="title" class="col">MC COVFEFE SELECTOR</h1>
-        <form class="bg-primary row">
-            <label for="roast-selection"></label>
-            <select id="roast-selection" class="dropdown-toggle bg-secondary">
-                <option>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <label for="coffees"></label>
-            <input id="coffeesSearch" type="search" onkeydown="renderCoffees(coffees)">
-            <input id="submit" type="submit"/>
 
-        </form>
-    <div class="bg-danger display-4 col">
-        <div id="coffees" class="bg-warning "></div>
-    </div>
-    </div>
+<!--THIS IS THE MAIN CONTAINER OF INPUT FORMS-->
+<body class="bg-secondary bg">
+<div class="display-4 container bg-secondary align-self-center">
+    <h2 id="title" class="display-2 text-center bg-secondary mb-4 card-text">Carlo & Megan: JAVA WORLD</h2>
+    <form class="bg-secondary row mb-4 form-inline ml-4">
+        <label for="roast-selection"></label>
+        <select id="roast-selection" class="dropdown-toggle align-self-center mr-3 bg-secondary">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+            <option>all</option>
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+
+        </select>
+        <label for="coffees"></label>
+        <input id="coffeeSearch" type="search" class="form-inline align-self-center bg-secondary mr-2">
+        <input id="submit" type="submit" class="form-inline bg-secondary d-inline mr-2 rounded"/>
+    </form>
+
+    <!--THIS IS THE EMPTY DIV FOR THE JS DATABASE INFO TO BE DISPLAYED-->
+    <div class="bg-secondary display-4 col card card-body d-flex">
+        <div id="coffees" class="bg-secondary"></div>
+    </div>
+</div>
+
+<!--BOOTSTRAP CDNS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>

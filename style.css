@@ -1,22 +1,32 @@
-h1#title {
-    font-family: 'Lemonada', cursive;
-    font-size: 1em;
+h2, p{
+    font-family: 'Oswald', sans-serif;
+    font-size: .9em;
+    color: #a3c1ad;
 }
 
-h1 {
-    font-family: 'Lato', sans-serif;
-}
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: .5em;
-}
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+#title,
+#roast-selection,
+#submit,
+#coffeeSearch{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.7em;
+    color: cornflowerblue;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.display-4{
+    color: cornflowerblue;
 }
 
+#java-varietal,
+#roast-process {
+    color: navajowhite;
+    font-family:'Josefin Slab', serif ;
+}
+
+.bg{
+    background-image: url(greenbeans.jpeg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3)
