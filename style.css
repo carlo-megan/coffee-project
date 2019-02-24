@@ -1,16 +1,16 @@
 h2, p{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Oswald', sans-serif;
     font-size: .9em;
-    color: navy;
+    color: #a3c1ad;
 }
 
 #title,
 #roast-selection,
 #submit,
 #coffeeSearch{
-    font-family: "Pacifico", cursive;
-    font-size: 1em;
-    color: darkturquoise;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.7em;
+    color: cornflowerblue;
 }
 
 .display-4{
@@ -19,6 +19,13 @@ h2, p{
 
 #java-varietal,
 #roast-process {
-    color: silver;
+    color: navajowhite;
+    font-family:'Josefin Slab', serif ;
 }
 
+.bg{
+    background-image: url(greenbeans.jpeg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
